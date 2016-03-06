@@ -22,7 +22,13 @@ var WeatherManager = WeatherManager || {};
             WeatherManager.OpenWeatherAdapter.getWeatherByCoords(position.coords);
         };
 
-
+ $('input[type="text"]').keyup(function(e){
+        if(e.keyCode == 13)
+        {
+            getWeather();
+        }
+    });
+    
     if ("geolocation" in navigator) {
         var notificationOptions = {
                 containerSelector: ".banner-container",
