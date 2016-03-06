@@ -1,0 +1,21 @@
+{
+  "name": "WeatherMan",
+  "description": "a simple weather application",
+  "main": "index.html",
+  "moduleType": [],
+  "authors": [
+    "Mahmoud Ibrahim"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.1"
+  }
+}

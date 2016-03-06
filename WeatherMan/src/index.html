@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>Weather Man</title>
+
+    <link rel="shortcut icon" href="img/favico.ico"/>
+    <link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="error hide"></div>
+<div class="loader hide">
+    <img src="img/loading.gif" alt="loading..."/>
+</div>
+<div class="banner hide">
+    <p class="message">Use my location to get the weather?  </p>
+    <a href="#"  class="btn yes">Yes</a>
+    <a href="#"  class="btn no">No</a>
+</div>
+
+<div class="results center hide">
+    <div>
+        <img id="weatherIcon"/>
+        <span class="big" id="temp"/>
+    </div>
+    <ul>
+        <li id="countryName"></li>
+        <li id="description" ></li>
+    </ul>
+</div>
+
+<div class="weather-input hide">
+    <form>
+    <span>Zip Code</span>
+    <input type="text" id="zipCode">
+
+    <span class="big">OR</span>
+
+    <span>Country</span>
+    <input type="text" id="country">
+
+    <a href="#" id="btnGetWeather" class="btn">Get Weather</a>
+    </form>
+</div><script src="js/weatherResultViewer.js"></script>
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="js/notificationManager.js"></script>
+<script src="js/openWeatherAdapter.js"></script>
+
+<script src="js/weatherManager.js"></script>
+</body>
+</html>
